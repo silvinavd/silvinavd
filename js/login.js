@@ -15,7 +15,7 @@ if (password.value === '' || email.value === ''){
 
 
 if (camposCompletos){
-            window.location = 'index.html';
+            window.location = 'inicio.html';
         }
   });
 
