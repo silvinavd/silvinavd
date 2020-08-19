@@ -139,3 +139,7 @@ a.custom-card:hover {
 .checked {
   color: orange;
 }
+.filtro{
+text-align: center;
+background-color: darkgray;
+}

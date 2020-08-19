@@ -15,6 +15,8 @@ if (password.value === '' || email.value === ''){
 
 
 if (camposCompletos){
+
+        getJSONData()
             window.location = "inicio.html";
         }
   });
