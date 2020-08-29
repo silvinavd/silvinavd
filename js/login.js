@@ -1,6 +1,8 @@
 //Función que se ejecuta una vez que se haya lanzado el evento de
 //que el documento se encuentra cargado, es decir, se encuentran todos los
 //elementos HTML presentes.
+
+
 document.addEventListener("DOMContentLoaded", function(e){
     document.getElementById("ingresar").addEventListener("click", function (e){
 let password = document.getElementById("inputPassword");
@@ -16,7 +18,7 @@ if (password.value === '' || email.value === ''){
 
 if (camposCompletos){
 
-        getJSONData()
+    localStorage.setItem("User-Logged", JSON.stringify({email: email.value}));
             window.location = "inicio.html";
         }
   });
