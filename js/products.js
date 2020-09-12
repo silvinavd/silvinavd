@@ -59,15 +59,19 @@ function showProducts(array) {
 
             contenido +=
                 `
-            <a href="category-info.html" class="list-group-item list-group-item-action">
-                <div class="row">
+            <a href="product-info.html" class="list-group-item list-group-item-action">
+                <div class="row"> 
+
                     <div class="col-3">
                         <img src="` + products.imgSrc + `" alt="` + products.description + `" class="img-thumbnail">
+                       
                     </div>
                     <div class="col">
                         <div class="d-flex w-100 justify-content-between">
                             <h4 class="mb-1">`+ products.name + `</h4>
-                            <small class="text-muted">` + products.cost + ` artículos</small>
+                            
+                            <small >` + products.cost + ` </small>
+                           <button id="verInfo" class="btn btn-light active" >Ver más</button>
                         </div>
                        
                     </div>
