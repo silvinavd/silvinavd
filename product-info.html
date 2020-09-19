@@ -18,18 +18,28 @@
 <body>
   <nav class="site-header sticky-top py-1 bg-dark">
     <div class="container d-flex flex-column flex-md-row justify-content-between">
-      <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
+      <a class="py-2 d-none d-md-inline-block" href="inicio.html">Inicio</a>
       <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
       <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
       <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
-      <a class="py-2 d-none d-md-inline-block" href="cart.html">Mi carrito</a>
 
-      <div id=info-user style="display: none;">
-        <label id="user" style="color: rgb(103, 107, 110);"></label> </label>
+
+      <div class="py-2 d-none d-md-inline-block" id=info-user style="display: none;">
+
+        <button type="button" id="user" class="btn btn-light active dropdown-toggle" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" style="height: 1 cm;">
+        </button>
+
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="cart.html">Ver mi carrito</a>
+          <a class="dropdown-item" href="my-profile.html">Mi perfil</a>
+          <a class="dropdown-item" href="index.html">Cerrar sesión</a>
+        </div>
+
         <button id="salir" class="btn btn-light active">Salir</button>
       </div>
     </div>
-
+    </div>
   </nav>
 
 
@@ -75,6 +85,8 @@
       </dd>
     </dl>
 
+
+    
     <div class="text-center p-4">
       <p class="lead">Comentarios sobre el producto</p>
 
@@ -84,9 +96,9 @@
 
     <div class="row justify-content-md-center">
       <div class="col-md-12 order-md-1">
-
+        
         <div class="row" id="comentar">
-          <div class="col-md-7 mb-3" id="newComment" >
+          <div class="col-md-7 mb-3" id="newComment">
             <label for="productDescription">Comentar</label>
             <textarea class="form-control" id="productDescription" rows="3"></textarea>
           </div>
@@ -111,9 +123,24 @@
         <button class="btn btn-primary btn-lg" id="enviarComentario" type="submit">Enviar</button>
         </form>
       </div>
+
+
+    </div>   
+    <div class="text-center p-4">
+      <p class="lead">Productos relacionados</p>
+
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-4">
+      
+    <div class="mfe-recos-container">
+
+    <div id="relatedProduct"></div>
     </div>
   </div>
-
+</div>
+</div>
   <footer class="text-muted">
     <div class="container">
       <p class="float-right">
