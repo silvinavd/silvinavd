@@ -23,7 +23,7 @@ function showProduct(product, arrayComments) {
     let imgs = "";
     let comments = "<hr>";
 
-    imgs += `
+   imgs += `
     <img class="img" src= "${product.images[0]}" width="300px" height = "200px">
     <img class="img" src= "${product.images[1]}" width="300px" height = "200px">
     <img class="img" src= "${product.images[2]}" width="300px" height = "200px">
