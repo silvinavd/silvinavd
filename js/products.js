@@ -59,25 +59,22 @@ function showProducts(array) {
 
             contenido +=
                 `
-            <a href="product-info.html" class="list-group-item list-group-item-action">
-                <div class="row"> 
 
-                    <div class="col-3">
-                        <img src="` + products.imgSrc + `" alt="` + products.description + `" class="img-thumbnail">
-                       
-                    </div>
-                    <div class="col">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h4 class="mb-1">`+ products.name + `</h4>
-                            
-                            <small >` + products.cost + ` </small>
-                           <button id="verInfo" class="btn btn-light active" >Ver más</button>
-                        </div>
-                       
-                    </div>
-                </div>
-            </a>
+            <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+         <a href="product-info.html"> <img class="card-img-top" src="${products.imgSrc}" alt="${products.description}"></a>
+          <div class="card-body">
+              <p class="card-text">${products.description} </p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                <small class="text-muted">${products.currency} ${products.cost} </small>
+                <small class="text-muted">Productos Vendidos ${products.soldCount}</small>
+              </div>
+            </div>
+          </div>
+        </div>
             `
+
         }
     }
     document.getElementById("listado").innerHTML = contenido;
