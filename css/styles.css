@@ -258,3 +258,8 @@ input::-webkit-inner-spin-button {
   height: 47px;
   border-radius: 37px
 }
+
+.profile {
+  height: 47px;
+  align-items: center;
+}

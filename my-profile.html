@@ -31,7 +31,11 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <link href="css/dropzone.css" rel="stylesheet">
+  
 </head>
+
+
+
 
 <body>
   <nav class="site-header sticky-top py-1 bg-dark">
@@ -59,13 +63,41 @@
     </div>
     </div>
   </nav>
-  <div class="container p-5">
-    <div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
-      <h4 class="alert-heading">¡A trabajar! :)</h4>
-      <p>Esta sección corresponde a: Entrega 7 (Fecha de entrega: 8/11/202020) -> Punto 1 y 2.</p>
-      <hr>
-      <p class="mb-0">Para saber qué debes hacer, fijate en la actividad en CREA correspondiente a esta entrega.</p>
-    </div>
+ 
+  <div class="container" style="max-width: 300px";>
+    <div style="background-color: rgb(190, 184, 184)"> 
+  
+      <div class="pt-4 text-center">
+
+  
+      
+      
+        <h3>Mi perfil</h3>
+        
+
+          <label for="urlImg"> Imagen de perfil</label>
+          <img class="img-thumbnail" style="max-width: 5cm;" id="imgPerfil" src= "img/perfil.png" >
+          <input type="text" id="imgUrl" placeholder="Url de imagen" value="">
+        </div>
+
+      
+        <div class="text-center p-4">
+          <input type="text" placeholder="Nombres" id="nombre" value="" class="form-control"> <br> <br>
+          <input type="text" placeholder="Apellidos" id="apellido" value="" class="form-control"> <br><br>
+          <input type="text" placeholder="E-mail" id="email" value="" class="form-control"> <br><br>
+          <input type="text" placeholder="Edad" id="edad" value="" class="form-control"> <br><br>
+          <input type="text" placeholder="Teléfono de contacto" id="telefono" value="" class="form-control"><br><br>
+           <button class="btn btn-light active" id="confirmar">Confirmar
+          
+        </button>
+            </div>
+          </div>
+</div>
+       
+    
+</div>
+</div>
+
   </div>
   <footer class="text-muted bg-light">
     <div class="container">
